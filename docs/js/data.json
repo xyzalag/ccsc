@@ -1,0 +1,78 @@
+{ "about":{"description": "", "organizational_committee" : "Members Of Organizational Committee supervise the organisation of the conference from choosing the topic, through technical background, promotion and finally provide support for all the participant during the conference. Timetable, related events, workshops etc. it’s all managed by them, and it’s the Organizational Committee from whom you can seek help with eventual problems. 
+\\n \\n Main coordinator: Kinga Ciupińska
+\\n
+Dominika Drążyk \\n
+Katarzyna Dziadowicz \\n
+Adam Jarmuła \\n
+Agnieszka Gębuś \\n
+Agata Wlaszczyk \\n
+Aleksander Michalec \\n
+Anatol Witkowski \\n
+Anna Kolota \\n
+Anna Jankowicz \\n
+Bartosz Haładus \\n
+Basia Wziętek \\n
+Dorota Rydzik \\n
+Ewa Grzeszczak \\n
+Ewa Ratuszyńska \\n
+Mikołaj Postawka \\n
+Jakub Okoń \\n
+Jerzy Jeziorski \\n
+Joanna Krawczyk \\n
+Katarzyna Stefanek \\n
+Maciej Próchnicki \\n
+Maciej Gocek \\n
+Magdalena Sabat \\n
+Martyna Kumka \\n
+Ola Woźniak \\n
+Paweł Ciślik \\n
+Paulina Zguda \\n
+Tobiasz Andrejczyk \\n
+Tomasz Danielak \\n
+Weronika Denisiewicz \\n 
+Weronika Browarczyk \\n
+Weronika Szura \\n
+", "supervisors": [{"name":"title",
+"description":"Members of the Scientific Committee are renowned and respected scientists with years
+of experience. Their most important task is the assessment of all abstracts that are sent for the
+Conference. Only after positive assessment from this Committee can the talks and posters be
+presented during the event."},{"name":"Michał Klincewicz", "description": "A member of the
+Department of Cognitive Science at the Institute of Philosophy of the Jagiellonian University. He
+completed his doctoral studies under the supervision of prof. David Rosenthal at the University of
+New York - his work concerned the consistency of consciousness in time. Later he became a
+postdoctoral scholar at the School of Mind and Brain in Berlin. Currently, his interests include
+topics related to the perception of time and the temporal aspect of a conscious experience."},
+{"name":"Grzegorz Nalepa", "description": ""}], "scientific_committee": [{"name": "", "description":
+"", "img": ""}, {"name": "", "description": "", "img": ""}, {"name": "", "description": "", "img":
+""}]}, "prev_editions":{"history": "The idea of the Cracow Cognitive Science Conference (CCC)
+appeared in 2007. Later that year the first CCC took place. The founders’ main goal was to create a
+place to share knowledge and diversified approaches to mind and brain sciences. \\n The Conference
+took place year after year for five subsequent years. In that time a number of participants
+presented new research and current trends in the field of Cognitive Science. Prof. Włodzisław Duch,
+prof. dr hab. inż. Ryszard Tadeusiewicz, prof. Edward Nęcka and many other great scientists honoured
+the Conference with their presence. For the next two years the Conference was withhold. Finally,
+thanks to the establishment of the Jagiellonian University’s Cognitive Science Student Association,
+the Conference meetings were resumed. The topic of the VI CCC, organised in 2014, was “SENSES”, and
+prof. Kevin O'Regan from Université René Descartes, a physicist and a philosopher who studies the
+phenomenon of visual perception and awareness, was the Key Presenter. The VII edition was held under
+the theme of “LANGUAGE” and Prof. Elisabetta Gola from Università di Cagliari was the special guest.
+In 2015 we got as many as 120 papers from all over Poland, as well as from other countries. We
+achieved similar success during VII edition, which main topic was “INTELLIGENCE”. That time we had
+the opportunity to hear out 4 specialists : dr. Adama Hampshire (Imperial College London), prof.
+Olivera Wilhelma (University of Ulm), dr. Jonathan Nelson and dr Tarek Besold (Free University of
+Bozen), their lectures were a great highlight of the conference. \\n\\n  The topic that was widely
+discussed from many perspectives last year, in 2017, was “CONSCIOUSNESS”. We’ve been honored to
+guest as a keynote speaker Prof. Michael Pauen (Humboldt University of Berlin and Berlin School of
+Mind and Brain), Prof. Axel Cleeremans (Institute of Psychology at Universite Libre de Bruxelles and
+French National Research Fund (FNRS), Dr hab. Michał Wierzchoń (Jagiellonian University Institute of
+Psychology and C-LAB) and Dr Michał Bola (Nencki Institute of Experimental Biology). In 2017 we also
+organised workshops during the conference for the first time: EEG workshop run by Urszula Górska and
+Bridging the gap between philosophy and science” Workshop run by Juan Loaiza. Both of them were
+great success and we decided to organise them as well during the current edition. \\n\\n The key of
+our success is to create a welcoming space for an interdisciplinary discourse on the most recent
+topics in cognitive sciences. Our goal is to provide an opportunity for broadening horizons and
+enriching knowledge about each year’s edition’s special theme, in a friendly and international
+atmosphere. From the very beginning of its existence, the series of CCCs shows that science does not
+have boundaries. ", "gallery": ["img1", "img2"]},     "registration":{"cfp": "",
+"registration_info": ""}, "workshops":[{"type": "optogenetics", "description": ""}, {"type": "vr",
+"description": ""}] }
