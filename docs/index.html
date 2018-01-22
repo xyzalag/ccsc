@@ -4,20 +4,30 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Cracow Cognitive Science Conference is an annual event promoting cognitive sciences around Poland and Europe. The 10th edition held in 12-13 May 2018 in Cracow, Poland">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Conference - Responsive HTML5 Template</title>
+    <title>CCSC 2018 - Cracow Cognitive Science Conference</title>
 
     <!-- favicon -->
-    <link href="favicon.png" rel=icon>
+    <link href="img/ccsc_logo.png" rel=icon>
 
     <!-- web-fonts -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,500' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Style CSS -->
     <link href="css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owlcarousel/owl.theme.default.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -46,7 +56,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand page-scroll" href="#page-top"><img src="img/logo.png" alt=""></a>
+                    <a class="navbar-brand page-scroll" href="#page-top"><img src="img/ccsc_logo.png" alt=""></a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -73,34 +83,56 @@
 
     <div class="jumbotron text-center">
         <div class="content">
-            <div class="event-date">DECEMBER 20–25, 2017, SHANGHAI</div>
-            <h1>Title of Your Conference or Event</h1>
-            <p class="lead">It's a tag line, where you can write a key point of your idea. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-            <button type="button" class="btn btn-default btn-lg">STAY IN THE LOOP</button>
+            <h1>10th Cracow Cognitive Science Conference</h1>
+            <div class="event-date">12-13 May 2018, Jagiellonian University, Kraków, Poland</div>
+            <div class="event-title neon">TECHNOLOGY</div>
+            <!-- <p class="lead">It's a tag line, where you can write a key point of your idea. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p> -->
+            <a class="page-scroll" href="#section-intro"><button type="button" class="btn btn-default btn-lg">LEARN MORE</button></a>
         </div>
     </div>
     <!-- .Jumbotron-->
 
 
-    <section id="section-intro" class="section-wrapper about-event">
+    <section id="section-intro" class="section-wrapper intro">
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
-                    <p class="lead">
-                        Quickly disintermediate empowered methodologies with ubiquitous best practices. Distinctively fabricate exceptional niches with technically sound technologies. Professionally revolutionize seamless synergy with real-time imperatives. Interactively pursue top-line bandwidth whereas visionary e-services.
+                <div id="getting-started" class="countdown-container">
+                    <h3 class="countdown-header">THE CONFERENCE STARTS IN...</h3>
+                    <div id="countdown-days" class="countdown-timer neon"><</div>
+                    <div id="countdown-hours" class="countdown-timer neon"></div>
+                    <div id="countdown-minutes" class="countdown-timer neon"></div>
+                    <div id="countdown-seconds" class="countdown-timer neon"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">    
+            <div class="row text-center intro-description-container">
+                <div class="col-md-8 intro-description">
+                    <p>
+                        We are pleased to invite you to 10th - anniversary - edition of <strong>Cracow Cognitive Science Conference</strong> - an annual event organised by Jagiellonan University's Cognitive Science Student Association and the Neurocognitive Section of Jagiellonian University's Psychology Student Association. 
                     </p>
-                    <p class="lead">
-                        Distinctively benchmark client-focused opportunities vis-a-vis 24/365 relationships. Progressively revolutionize equity invested synergy whereas emerging web services.
+                    <p> 
+                        The conference's topic is <strong>TECHNOLOGY</strong>. The conference will be organized in two complementary modules including the specific problem areas enumerated below:
+                        <div class="col-sm-6 intro-description-list intro-description-container">
+                            <ul><strong>THE FIRST MODULE - PROBLEMS</strong>
+                                <li>MACHINE ETHICS AND MACHINE LAW</li>
+                                <li>TRANSHUMANISM</li>
+                                <li>HUMAN-COMPUTER INTERACTION</li>
+                                <li>GENERAL ARIFICIAL INTELLIGENCE</li>
+                            </ul>
+                        </div>   
+                        <div class="col-sm-6 intro-description-list intro-description-container">
+                            <ul><strong>THE SECOND MODULE - METHODS</strong>
+                                <li>VIRTUAL REALITY &#38; AUGMENTED REALITY</li>
+                                <li>NEUROIMAGING</li>
+                                <li>SENSORY SUBSTITUTION</li>
+                                <li>MACHINE LEARNING</li>
+                            </ul>
+                        </div>  
                     </p>
                 </div>
                 <div class="col-md-4">
-                    <address>
-                        <strong>Eventas, Inc.</strong><br>
-                        1355 Market Street<br>
-                        Suite 900<br>
-                        San Francisco, CA 94103<br>
-                        <abbr title="Phone">P:</abbr> (123) 456-7890
-                    </address>
+                    <img src="img/ccsc-penbrain-title.jpg" class="img-responsive" alt="CCSC2018 logo">
                 </div>
             </div>
         </div>
@@ -112,24 +144,18 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-title">
-                        <h1>SPEAKERS</h1>
+                        <h1>GUESTS</h1>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-6 col-md-3">
-                    <figure class="thumbnail">
+                    <figure class="thumbnail" ata-toggle="modal" data-target="#myModal">
                         <a href="#"><img src="img/img-team-1.jpg" class="img-responsive" alt="Image"></a>
                         <figcaption class="caption text-center">
                             <h3>Tom Hoffmann
-                                <small>Cintas</small>
+                                <small>Jagiellonian University</small>
                             </h3>
-                            <ul class="social-links">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-                            </ul>
                         </figcaption>
                     </figure>
                 </div>
@@ -140,14 +166,8 @@
                         <a href="#"><img src="img/img-team-2.jpg" class="img-responsive" alt="Image"></a>
                         <figcaption class="caption text-center">
                             <h3>Zoe Krämer
-                                <small>Earthlink</small>
+                                <small>Jagiellonian University</small>
                             </h3>
-                            <ul class="social-links">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-                            </ul>
                         </figcaption>
                     </figure>
                 </div>
@@ -158,14 +178,8 @@
                         <a href="#"><img src="img/img-team-3.jpg" class="img-responsive" alt="Image"></a>
                         <figcaption class="caption text-center">
                             <h3>Helena Kühn
-                                <small>Herman</small>
+                                <small>University of Warsaw</small>
                             </h3>
-                            <ul class="social-links">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-                            </ul>
                         </figcaption>
                     </figure>
                 </div>
@@ -176,277 +190,142 @@
                         <a href="#"><img src="img/img-team-4.jpg" class="img-responsive" alt="Image"></a>
                         <figcaption class="caption text-center">
                             <h3>Leon Werner
-                                <small>Level</small>
+                                <small>University of Warsaw</small>
                             </h3>
-                            <ul class="social-links">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-                            </ul>
                         </figcaption>
                     </figure>
                 </div>
                 <!-- /.col-sm-6 -->
-
             </div>
-            <!-- .row -->
-            <div class="row">
-                <div class="col-sm-6 col-md-3">
-                    <figure class="thumbnail">
-                        <a href="#"><img src="img/img-team-5.jpg" class="img-responsive" alt="Image"></a>
-                        <figcaption class="caption text-center">
-                            <h3>Alexander Ziegler
-                                <small>A.G. Edwards</small>
-                            </h3>
-                            <ul class="social-links">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                </div>
-                <!-- /.col-sm-6 -->
-
-                <div class="col-sm-6 col-md-3">
-                    <figure class="thumbnail">
-                        <a href="#"><img src="img/img-team-6.jpg" class="img-responsive" alt="Image"></a>
-                        <figcaption class="caption text-center">
-                            <h3>Benedikt
-                                <small>Fitch Co.</small>
-                            </h3>
-                            <ul class="social-links">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                </div>
-                <!-- /.col-sm-6 -->
-
-                <div class="col-sm-6 col-md-3">
-                    <figure class="thumbnail">
-                        <a href="#"><img src="img/img-team-7.jpg" class="img-responsive" alt="Image"></a>
-                        <figcaption class="caption text-center">
-                            <h3>Lara Hahn
-                                <small>Acterna</small>
-                            </h3>
-                            <ul class="social-links">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                </div>
-                <!-- /.col-sm-6 -->
-
-                <div class="col-sm-6 col-md-3">
-                    <figure class="thumbnail">
-                        <a href="#"><img src="img/img-team-8.jpg" class="img-responsive" alt="Image"></a>
-                        <figcaption class="caption text-center">
-                            <h3>Elias Friedrichs
-                                <small>Adolph</small>
-                            </h3>
-                            <ul class="social-links">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                </div>
-                <!-- /.col-sm-6 -->
-
-            </div>
-            <!-- .row -->
         </div>
         <!-- /.container -->
     </section>
     <!-- .team -->
 
-    <section id="section-ajenda" class="section-wrapper section-ajenda">
+    <section id="section-pricing" class="section-wrapper pricing-section">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-title">
-                        <h1>AJENDA</h1>
+                        <h1>GALLERY</h1>
+                        <p>Previous edition - IX CCSC - Consciousness</p>
                     </div>
                 </div>
             </div>
-
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="session">
-                        <time>8:30AM</time>
-                        <h2>Doors Open</h2>
-                    </div>
-                    <!-- .session -->
-
-                    <div class="session">
-                        <time>9:30 - 9:40AM</time>
-                        <h2>Opening Remarks</h2>
-                        <h3>Fiona Kuhn <span>CO-FOUNDER & CEO, MES</span></h3>
-                    </div>
-                    <!-- .session -->
-
-                    <div class="session">
-                        <time>9:50 - 10:05AM</time>
-                        <h2>Focus on the story: how publishers and brands succeed on today's internet.</h2>
-                        <h3>Marie Jung <span>HEAD OF PARTNERSHIPS, MES</span></h3>
-                    </div>
-                    <!-- .session -->
-
-                    <div class="session">
-                        <time>10:10 - 10:35AM</time>
-                        <h2>Keynote Presentation</h2>
-                        <h3>Zoe Kühn <span>CO-FOUNDER & CEO,, BOOSTER</span></h3>
-                    </div>
-                    <!-- .session -->
-
-
+            <div class="row text-center text-lg-left gallery-row">
+                <div class="col-lg-3 col-xs-6">
+                    <a href="img/gallery/gallery-1.jpg" data-fancybox="images">
+                        <img class=" gallery-img img-fluid img-thumbnail" src="img/gallery/gallery-1-min.jpg" alt="">
+                    </a>
                 </div>
-                <div class="col-md-4">
-                    <div class="session">
-                        <time>11:15 - 1:35PM</time>
-                        <h2>Brand Innovator Spotlight</h2>
-                        <h3>Tim Rams <span>DIRECTOR, CONTENT MARKETING, FIXS</span></h3>
-                        <h3>Daniel Fuchs <span>DIRECTOR OF MEDIA SERVICES, MENGO</span></h3>
-                        <h3>Hannah Keller <span>CO-FOUNDER, LOLO</span></h3>
-                    </div>
-                    <!-- .session -->
 
-                    <div class="session">
-                        <time>1:35 - 2:20PM</time>
-                        <h2>Fireside Chat: Making Native Work - An Agency Perspective</h2>
-                        <h3>Fiona Kuhn <span>CO-FOUNDER & CEO, MES</span></h3>
-                    </div>
-                    <!-- .session -->
-
-                    <div class="session">
-                        <time>2:20 - 3:20PM</time>
-                        <h2>Lunch Break</h2>
-                    </div>
-                    <!-- .session -->
-
-
+                <div class="col-lg-3 col-xs-6">
+                    <a href="img/gallery/gallery-2.jpg" data-fancybox="images">
+                        <img class="gallery-img img-fluid img-thumbnail" src="img/gallery/gallery-2-min.jpg" alt="">
+                    </a>
                 </div>
-                <div class="col-md-4">
-                    <div class="session">
-                        <time>3:20PM - 4PM</time>
-                        <h2>Native Creatives Winners Presentation</h2>
-                        <h3>Johann Graf <span>VP Sales, MES</span></h3>
-                    </div>
-                    <!-- .session -->
 
-                    <div class="session">
-                        <time>4:05 - 5:30PM</time>
-                        <h2>Case Study: XYR</h2>
-                        <h3>Jan Pfeiffer <span>HEAD OF COMMUNICATIONS, TOT</span></h3>
-                        <h3>Marie Ilsner <span>PRESIDENT, PADDA</span></h3>
-                        <h3>Hannes Beck <span>MANAGING DIRECTOR, DEP</span></h3>
-                    </div>
-                    <!-- .session -->
-
-
-                    <div class="session">
-                        <time>5:30 - 6:00PM</time>
-                        <h2>Cocktail and Networking Party</h2>
-                    </div>
-                    <!-- .session -->
-
-
+                <div class="col-lg-3 col-xs-6">
+                    <a href="img/gallery/gallery-3.jpg" data-fancybox="images">
+                        <img class="gallery-img img-fluid img-thumbnail" src="img/gallery/gallery-3-min.jpg" alt="">
+                    </a>
                 </div>
-            </div>
-        </div>
 
-    </section>
-
-
-    <section id="section-pricing" class="section-wrapper pricing-section gray-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title">
-                        <h1>BUY TICKET</h1>
-                        <p>Quickly synthesize low-risk high-yield e-markets without dynamic.</p>
-                    </div>
+                <div class="col-lg-3 col-xs-6">
+                    <a href="img/gallery/gallery-4.jpg" data-fancybox="images">
+                        <img class="gallery-img img-fluid img-thumbnail" src="img/gallery/gallery-4-min.jpg" alt="">
+                    </a>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="pricing-table-default text-center">
-                        <div class="pricing-head">
-                            <h3>Early-bird PASS</h3>
-                            <span class="price"><sup>$</sup>100</span>
-                        </div>
-                        <div class="pricing-detail">
-                            <ul class="pricing-list pink-i">
-                                <li>Main keynote speeches</li>
-                                <li>Access to all areas</li>
-                                <li>Lunch on day 1</li>
-                            </ul>
-                        </div>
-                        <a href="#" class="btn btn-primary">BUY TICKET</a>
-                    </div>
-                    <!-- /.pricing-table-wrapper -->
-                </div>
-                <!-- .col-sm-4 -->
-
-                <div class="col-sm-4">
-                    <div class="pricing-table-default text-center">
-                        <div class="pricing-head">
-                            <h3>ULTIMATE PASS</h3>
-                            <span class="price"><sup>$</sup>150</span>
-                        </div>
-                        <div class="pricing-detail">
-                            <ul class="pricing-list pink-i">
-                                <li>Main keynote speeches</li>
-                                <li>Access to all areas</li>
-                                <li>Lunch on day 1</li>
-                            </ul>
-                        </div>
-                        <a href="#" class="btn btn-primary">BUY TICKET</a>
-                    </div>
-                    <!-- /.pricing-table-wrapper -->
-                </div>
-                <!-- .col-sm-4 -->
-
-                <div class="col-sm-4">
-                    <div class="pricing-table-default text-center">
-                        <div class="pricing-head">
-                            <h3>PLATINUM</h3>
-                            <span class="price"><sup>$</sup>250</span>
-                        </div>
-                        <div class="pricing-detail">
-                            <ul class="pricing-list pink-i">
-                                <li>Main keynote speeches</li>
-                                <li>Access to all areas</li>
-                                <li>Lunch on day 1</li>
-                            </ul>
-                        </div>
-                        <a href="#" class="btn btn-primary">BUY TICKET</a>
-                    </div>
-                    <!-- /.pricing-table-wrapper -->
-                </div>
-                <!-- .col-sm-4 -->
             </div>
             <!-- /.row -->
+
+            <div class="row text-center text-lg-left gallery-row">
+                <div class="col-lg-3 col-xs-6">
+                    <a href="img/gallery/gallery-5.jpg" data-fancybox="images">
+                        <img class="gallery-img img-fluid img-thumbnail" src="img/gallery/gallery-5-min.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-xs-6">
+                    <a href="img/gallery/gallery-6.jpg" data-fancybox="images">
+                        <img class="gallery-img img-fluid img-thumbnail" src="img/gallery/gallery-6-min.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-xs-6">
+                    <a href="img/gallery/gallery-7.jpg" data-fancybox="images">
+                        <img class="gallery-img img-fluid img-thumbnail" src="img/gallery/gallery-7-min.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-xs-6">
+                    <a href="img/gallery/gallery-8.jpg" data-fancybox="images">
+                        <img class="gallery-img img-fluid img-thumbnail" src="img/gallery/gallery-8-min.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <!-- /.row -->
+            <div class="row text-center text-lg-left gallery-row">
+                <div class="col-lg-3 col-xs-6">
+                    <a href="img/gallery/gallery-9.jpg" data-fancybox="images">
+                        <img class="gallery-img img-fluid img-thumbnail" src="img/gallery/gallery-9-min.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-xs-6">
+                    <a href="img/gallery/gallery-10.jpg" data-fancybox="images">
+                        <img class="gallery-img img-fluid img-thumbnail" src="img/gallery/gallery-10-min.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-xs-6">
+                    <a href="img/gallery/gallery-11.jpg" data-fancybox="images">
+                        <img class="gallery-img img-fluid img-thumbnail" src="img/gallery/gallery-11-min.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-xs-6">
+                    <a href="img/gallery/gallery-12.jpg" data-fancybox="images">
+                        <img class="gallery-img img-fluid img-thumbnail" src="img/gallery/gallery-12-min.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- /.row -->
+
+            <div class="row text-center text-lg-left gallery-row">
+                <div class="col-lg-3 col-xs-6">
+                    <a href="img/gallery/gallery-13.jpg" data-fancybox="images">
+                        <img class="gallery-img img-fluid img-thumbnail" src="img/gallery/gallery-13-min.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-xs-6">
+                    <a href="img/gallery/gallery-14.jpg" data-fancybox="images">
+                        <img class="gallery-img img-fluid img-thumbnail" src="img/gallery/gallery-14-min.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-xs-6">
+                    <a href="img/gallery/gallery-15.jpg" data-fancybox="images">
+                        <img class="gallery-img img-fluid img-thumbnail" src="img/gallery/gallery-15-min.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-xs-6">
+                    <a href="img/gallery/gallery-16.jpg" data-fancybox="images">
+                        <img class="gallery-img img-fluid img-thumbnail" src="img/gallery/gallery-16-min.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- /.row -->
+
         </div>
         <!-- /.container -->
     </section>
     <!-- .pricing-section -->
 
-
-    <section id="section-partner" class="section-wrapper client-logo">
+    <section id="section-partner" class="section-wrapper partners">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -455,24 +334,29 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
-                    <a href="#"><img src="img/logo-client-1.jpg" alt="Image"></a>
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
-                    <a href="#"><img src="img/logo-client-2.jpg" alt="Image"></a>
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
-                    <a href="#"><img src="img/logo-client-3.jpg" alt="Image"></a>
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
-                    <a href="#"><img src="img/logo-client-4.jpg" alt="Image"></a>
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
-                    <a href="#"><img src="img/logo-client-5.jpg" alt="Image"></a>
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
-                    <a href="#"><img src="img/logo-client-6.jpg" alt="Image"></a>
+            <div class="row partners-container">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <a href="#"><img src="img/partners/partners-logo-1.jpg" alt="Image"><h3 class="partners-label">SPONSOR</h3></a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="img/partners/partners-logo-2.jpg" alt="Image"><h3 class="partners-label">HONORARY PATRONAGE</h3></a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="img/partners/partners-logo-3.jpg" alt="Image"><h3 class="partners-label">SPONSOR</h3></a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="img/partners/partners-logo-4.jpg" alt="Image"><h3 class="partners-label">MEDIA PATRONAGE</h3></a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="img/partners/partners-logo-5.jpg" alt="Image"><h3 class="partners-label">MEDIA PATRONAGE</h3></a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="img/partners/partners-logo-6.jpg" alt="Image"><h3 class="partners-label">SPONSOR</h3></a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="img/partners/partners-logo-7.jpg" alt="Image"><h3 class="partners-label">HONORARY PATRONATE</h3></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -481,41 +365,46 @@
     <!-- .client-logo -->
 
 
-    <section id="section-venue" class="section-wrapper  gray-bg">
+    <section id="section-venue" class="section-wrapper gray-bg">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-title">
-                        <h1>THE VENUE</h1>
-
-                        <p>Credibly recaptiualize cutting-edge functionalities vis-a-vis intuitive growth strategies. Appropriately evolve open-source potentialities via goal-oriented e-business. Enthusiastically target go forward scenarios and visionary "outside the box" thinking. Professionally administrate cost effective sources without corporate convergence.</p>
+                        <h1>CONTACT</h1>
                     </div>
                 </div>
             </div>
             <!-- /.row-->
 
-            <div class="row">
-                <div class="col-md-12">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h3 class="text-center">THE VENUE</h3>
                     <div id="googleMap"></div>
+                </div>
+
+                <div class="col-md-4 contact-column">
+                    <div class="contact-social contact-social-black text-center">
+                        <div class="contact-social-border">
+                        <span class="neon">JAGIELLONIAN UNIVERSITY<br></span>
+                        Institite of Psychology <br>
+                        Ingardena 6 <br>
+                        Cracow, Poland<br> 
+                        <strong>cogsciconference@gmail.com</strong><br>
+                        </div>
+                    </div>
+
+                    <div class="contact-social contact-social-hover text-center">
+                        <a href="https://www.facebook.com/cracowcognitivescienceconference/"><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i>
+                        <span> FACEBOOK</span>
+                    </div>
+                    <div class="contact-social contact-social-hover text-center">
+                        <a href="https://www.instagram.com/cogsciconf/"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+                        <span> INSTAGRAM</span>
+                    </div>
+                    
                 </div>
             </div>
             <!-- .row-->
-
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title">
-                        <h2>STAY INFORMED</h2>
-                        <p>Don't miss the event!</p>
-                    </div>
-                    <form id="contactForm" class="subscribe-form form-inline" action="sendemail.php" method="POST">
-                        <div class="form-group">
-                            <label for="emailTwo" class="sr-only">Email</label>
-                            <input type="email" class="form-control input-lg" required="" id="emailTwo" name="email" placeholder="Enter your email address">
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-lg">SUBSCRIBE</button>
-                    </form>
-                </div>
-            </div>
 
         </div>
     </section>
@@ -547,11 +436,15 @@
 
 <!-- Plugin JavaScript -->
 <script src="js/jquery.easing.min.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
 
 <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
 <script src="https://maps.googleapis.com/maps/api/js"></script>
 
 <!--<script src="js/one-page-nav.js"></script>-->
 <script src="js/scripts.js"></script>
+
 </body>
 </html>
