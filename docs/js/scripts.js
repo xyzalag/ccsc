@@ -311,4 +311,38 @@ jQuery(function ($) {
         });
     }());
     
+        // --------------------------------------------------------------------
+    // CREATE MODAL ON THUMBNAIL CLICK
+    // --------------------------------------------------------------------
+    (function(){
+        $(".thumbnail").on("click", function(e){
+            e.preventDefault();
+            if (document.querySelector(".modal") == null){
+                var modalNode = document.createElement("div");
+                var containerNode = document.createElement("div");
+                var rowNode = document.createElement("div");
+                var imgNode = document.createElement("img");
+                var clickedImg = $(this)[0].querySelector("img").getAttribute("src");
+                imgNode.setAttribute("src", clickedImg);
+                var column1Node = document.createElement("div");
+                var column2Node = document.createElement("div");
+                $(column1Node).addClass("col-sm-6 modal-section");
+                $(column2Node).addClass("col-sm-6 modal-section");
+                column1Node.appendChild(imgNode);
+                //here import the text
+                var elementText = $(this)[0].querySelector("h3").innerHTML.split("<")[0];
+                console.log(elementText);
+                $(rowNode).addClass("row modal-row");
+                rowNode.appendChild(column1Node);
+                rowNode.appendChild(column2Node);
+                $(containerNode).addClass("container");
+                $(containerNode).addClass("modal-container");
+                containerNode.appendChild(rowNode);
+                $(modalNode).addClass("modal full-modal");
+                modalNode.appendChild(containerNode);
+                document.body.appendChild(modalNode);
+            } 
+        })
+    }());
+    
 }); // JQuery end

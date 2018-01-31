@@ -563,6 +563,7 @@ button:focus,
     border           : 0;
     margin-bottom: 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
     }
 
 @media (max-width : 767px) {
@@ -796,4 +797,30 @@ button:focus,
 }
 }
 
+/*Modal settings*/
+.full-modal { 
+    background-color: rgba(1,1,1,0.9);
+    display: block;
+}
 
+.modal-container {
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(1,1,1,0.5);
+}
+
+.modal-section {
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-row {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
