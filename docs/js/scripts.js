@@ -5,7 +5,7 @@
 window.addEventListener("load", function(){
     var currentPage = window.location.pathname.split("/");
     currentPage  = currentPage[currentPage.length-1].toLowerCase();
-    if (currentPage == "index.html" || currentPage.length === 0){
+    if (currentPage == "index.html" || currentPage == "gallery.html" || currentPage.length === 0){
         return;
     }
     else {
