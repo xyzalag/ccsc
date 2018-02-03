@@ -924,6 +924,29 @@ button:focus,
     flex-direction: column;
 }
 
+@media(max-width:768px){
+    .modal-container {
+        width: 70%; 
+        height: 100%; 
+    }
+    
+    .modal-row {
+        display: flex;
+        width: 100%; 
+        flex-direction: column; 
+        margin-top: 20px;
+    }
+    
+    .modal-section{
+        width: 100%;
+        height: auto;
+    }
+    
+    .modal-custom-content:nth-child(2){
+        overflow: scroll;
+    }
+}
+
 .modal-row {
     height: 100%;
     display: flex;
