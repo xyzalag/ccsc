@@ -243,6 +243,10 @@ button:focus,
     z-index  : 9;
     }
 
+.header-small {
+    top: 20px;
+}
+
 /*Logo*/
 .navbar-brand {
     padding : 0;
@@ -303,8 +307,11 @@ button:focus,
 .main-menu .nav li a {
     color       : #ffffff;
     font-weight : 500;
-    padding     : 15px 0 15px 30px;
     }
+
+.nav-main-link .main-menu .nav {
+    padding     : 15px 0 15px 30px;
+}
 
 .main-menu .nav li a:hover,
 .main-menu .nav li.active a {
@@ -314,6 +321,7 @@ button:focus,
 
 .main-menu .nav li a:focus {
     background : transparent;
+    0m
     }
 
 @media (max-width : 991px) {
@@ -410,18 +418,13 @@ button:focus,
     font-weight: 300;
     }
 
-.jumbotron .content p.lead {
-    font-size   : 24px;
-    line-height : 1.5em;
-    color       : rgba(255, 255, 255, .7);
-    }
 
 .jumbotron .content .event-date {
     font-size     : 24px;
     margin-bottom : 40px;
     }
 
-.jumbotron .content .event-title {
+.jumbotron .content .event-subtitle {
     font-size: 42px;
 }
 
@@ -563,7 +566,6 @@ button:focus,
     border           : 0;
     margin-bottom: 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    cursor: pointer;
     }
 
 @media (max-width : 767px) {
@@ -682,10 +684,6 @@ button:focus,
     margin-bottom: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     color: black; 
-    -webkit-transition : all 0.3s ease 0s;
-    -moz-transition    : all 0.3s ease 0s;
-    -o-transition      : all 0.3s ease 0s;
-    transition         : all 0.3s ease 0s;
 }
 
 .contact-social-border {
@@ -695,6 +693,11 @@ button:focus,
 
 .contact-social-hover {
     font-weight: 300;
+    position: relative;
+    -webkit-transition : all 0.3s linear;
+    -moz-transition    : all 0.3s linear;
+    -o-transition      : all 0.3s linear;
+    transition         : all 0.3s linear;
 }
 
 .contact-social-black {
@@ -706,14 +709,12 @@ button:focus,
     margin-bottom: 0;
 }
 
-
-
 .contact-social a{
     color: #000;
-    -webkit-transition : all 0.3s ease 0s;
-    -moz-transition    : all 0.3s ease 0s;
-    -o-transition      : all 0.3s ease 0s;
-    transition         : all 0.3s ease 0s;
+    -webkit-transition : all 0.3s ease-out;
+    -moz-transition    : all 0.3s ease-out;
+    -o-transition      : all 0.3s ease-out;
+    transition         : all 0.3s ease-out;
 }
 
 
@@ -795,6 +796,85 @@ button:focus,
     .gallery-row {
     margin-bottom: 30px;
 }
+}
+
+
+/* ---------------------------------------------- /*
+ * SUBPAGE 
+/* ---------------------------------------------- */
+
+/*HERO*/
+
+.subpage-jumbotron {
+    height: 50vh;
+    min-height: 400px;
+    background: url("../img/par2.jpg");
+}
+
+.subpage-jumbotron .content h1 {
+    color: #ffffff;
+    font-size: 30px; 
+    font-weight: 300;
+    }
+
+.subpage-jumbotron .content .event-date {
+    font-size: 20px;
+}
+
+/*NAVIGATION*/
+
+.fixed-nav {
+    position           : absolute;
+    right              : 0;
+    left               : 0;
+    top                : 0;
+    z-index            : 999;
+    background         : transparent !important;
+    padding            : 5px 0;
+    box-shadow         : 0 2px 5px rgba(0, 0, 0, .1);
+    -webkit-transition : all .5s ease-in-out;
+    -moz-transition    : all .5s ease-in-out;
+    transition         : all .5s ease-in-out;
+    }
+
+.fixed-nav .nav li a {
+    color : #fff;
+}
+
+.fixed-nav .navbar-toggle .icon-bar{
+    background: #333;
+}
+
+@media (max-width: 768px) {
+    .fixed-nav{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .fixed-nav .nav li a {
+        color: #0e1555;
+    }
+}
+
+.dropdown-menu {
+    background: #000;
+    margin: 0 auto;
+}
+
+
+/*CONTENT*/
+
+.subpage-title-container {
+    border: .5px solid black;
+    padding: 30px 0;
+}
+
+.subpage-title {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    color: #0e1555;
+    margin: 0;
+    font-size: 40px;
 }
 
 /*Modal settings*/

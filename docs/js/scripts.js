@@ -310,6 +310,20 @@ jQuery(function ($) {
           $(this).find('a').removeClass('neon');
         });
     }());
+
+
+    // --------------------------------------------------------------------
+    // NAVBAR DROPDOWN SLIDE EFFECT
+    // --------------------------------------------------------------------
+
+    (function() {
+      $('.navbar .dropdown').hover(function() {
+        $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideDown();
+      }, function() {
+        $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp()
+      });
+
+    }());
     
         // --------------------------------------------------------------------
     // CREATE MODAL ON THUMBNAIL CLICK
@@ -349,7 +363,7 @@ jQuery(function ($) {
             var descriptionTitle = document.createElement("h2");
             var descContent = document.createTextNode(elem[0].querySelector("h3").innerHTML.split("<small>")[0]);
             descriptionTitle.appendChild(descContent);
-            $(descriptionTitle).addClass("modal-custom-content neon event-title");
+            $(descriptionTitle).addClass("modal-custom-content neon event-subtitle");
             var descriptionContent = document.createElement("div");
             var descContentText = document.createTextNode(description);
             descriptionContent.appendChild(descContentText);
