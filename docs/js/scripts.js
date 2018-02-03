@@ -1,3 +1,28 @@
+// --------------------------------------------------------------------
+// READ IN CORRECT INFORMATION FROM JSON
+// -------------------------------------------------------------------- 
+
+window.addEventListener("load", function(){
+    var currentPage = window.location.pathname.split("/");
+    currentPage  = currentPage[currentPage.length-1].toLowerCase();
+    if (currentPage == "index.html" || currentPage.length === 0){
+        return;
+    }
+    else {
+        $.get("js/data.json", function(data){
+            loadContent(data, currentPage);
+        })
+    }
+})
+
+var loadContent = function(x, page){
+    var pageName = page.split(".")[0];
+    var contentOfThePage = x[pageName];
+    var parentNode = document.querySelector("main");
+    $(parentNode).append(contentOfThePage);
+    
+}
+
 jQuery(function ($) {
 
     'use strict';
@@ -347,13 +372,13 @@ jQuery(function ($) {
             imgNode.setAttribute("src", clickedImg);
             var column1Node = document.createElement("div");
             var column2Node = document.createElement("div");
-            $(column1Node).addClass("col-sm-6 modal-section");
-            $(column2Node).addClass("col-sm-6 modal-section");
+            $(column1Node).addClass("col-xs-6 modal-section");
+            $(column2Node).addClass("col-xs-6 modal-section");
             column1Node.appendChild(imgNode);
             //here import the text - I will be using elementText to look for the right name in the json file 
             var elementText = elem[0].querySelector("h3").dataset.name;
             var description;
-            var allSpeakers = data.main.speakers;
+            var allSpeakers = data["main"]["speakers"];
             for (var i=0;i <allSpeakers.length; i++){
                 if (allSpeakers[i].name == elementText){
                     description = allSpeakers[i]["description"];
@@ -399,4 +424,6 @@ jQuery(function ($) {
             
         } 
     }
+    
+    
 }); // JQuery end

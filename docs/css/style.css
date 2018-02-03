@@ -877,6 +877,31 @@ button:focus,
     font-size: 40px;
 }
 
+.subpage-subtitle {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    color: #0e1555;
+    margin: 15px;
+    font-size: 25px;
+}
+
+.subpage-content {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.subpage-list-element {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    margin-left: 50px;
+    list-style-type: circle;
+}
+
+
 /*Modal settings*/
 .full-modal { 
     background-color: rgba(1,1,1,0.9);
