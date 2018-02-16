@@ -65,6 +65,17 @@ jQuery(function ($) {
     }());
 
     // --------------------------------------------------------------------
+    // Prevents nav toggle delay on mobile
+    // --------------------------------------------------------------------
+
+    (function () {
+         $('.navbar-toggle').bind( "touchstart", function(e){
+         e.preventDefault();
+         $('.navbar-collapse').collapse('toggle');
+      });
+    }());
+
+    // --------------------------------------------------------------------
     // Closes the Responsive Menu on Menu Item Click
     // --------------------------------------------------------------------
 
@@ -342,15 +353,16 @@ jQuery(function ($) {
     // --------------------------------------------------------------------
 
     (function() {
+      if ( $(window).width() > 1024) {
       $('.navbar .dropdown').hover(function() {
         $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideDown();
       }, function() {
         $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp()
       });
-
+    }
     }());
     
-        // --------------------------------------------------------------------
+    // --------------------------------------------------------------------
     // CREATE MODAL ON THUMBNAIL CLICK
     // --------------------------------------------------------------------
     (function(){

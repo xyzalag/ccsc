@@ -13,7 +13,8 @@
 
     <!-- web-fonts -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,500' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 
     <!-- Bootstrap -->
@@ -60,16 +61,28 @@
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
+                <!-- <div class="collapse navbar-collapse navbar-right navbar-main-collapse"> -->
                 <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                     <ul class="nav navbar-nav">
-                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        
                         <li class="hidden"><a href="#page-top"></a></li>
-                        <li><a class="page-scroll" href="#section-intro">About</a></li>
-                        <li><a class="page-scroll" href="#section-speaker">Speaker</a></li>
-                        <li><a class="page-scroll" href="#section-ajenda">Agenda</a></li>
-                        <li><a class="page-scroll" href="#section-pricing">Buy Ticket</a></li>
+                        <li><a href="./registration.html">Registration</a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">About<span class="caret"></span></a>
+                            <ul id="products-menu" class="dropdown-menu clearfix" role="menu">
+                                <li><a href="./organizers.html">Organizers</a></li>
+                                <li><a href="./committee.html">Scientific Committee</a></li>
+                                <li><a class="page-scroll" href="#section-speaker">Guests</a></li> 
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Previous Editions<span class="caret"></span></a>
+                            <ul id="products-menu" class="dropdown-menu clearfix" role="menu">
+                                <li><a href="./history.html">History</a></li>
+                                <li><a href="./gallery.html">Gallery</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./workshops.html">Workshops</a></li>
                         <li><a class="page-scroll" href="#section-partner">Partners</a></li>
-                        <li><a class="page-scroll" href="#section-venue">Venue</a></li>
+                        <li><a class="page-scroll" href="#section-venue">Contact</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -86,14 +99,13 @@
             <h1>10th Cracow Cognitive Science Conference</h1>
             <div class="event-date">12-13 May 2018, Jagiellonian University, Kraków, Poland</div>
             <div class="event-subtitle neon">TECHNOLOGY</div>
-            <!-- <p class="lead">It's a tag line, where you can write a key point of your idea. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p> -->
             <a class="page-scroll" href="#section-intro"><button type="button" class="btn btn-default btn-lg">LEARN MORE</button></a>
         </div>
     </div>
     <!-- .Jumbotron-->
 
 
-    <section id="section-intro" class="section-wrapper intro">
+    <section id="section-intro" class="section-wrapper-main intro">
         <div class="container">
             <div class="row">
                 <div id="getting-started" class="countdown-container">
@@ -139,7 +151,7 @@
     </section>
     <!-- .about-event -->
 
-    <section id="section-speaker" class="section-wrapper team gray-bg">
+    <section id="section-speaker" class="section-wrapper-main team">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -148,7 +160,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row team-hover">
                 <div class="col-sm-6 col-md-3">
                     <figure class="thumbnail">
                         <img src="img/img-team-1.jpg" class="img-responsive" alt="Image">
@@ -163,9 +175,9 @@
 
                 <div class="col-sm-6 col-md-3">
                     <figure class="thumbnail">
-                        <img src="img/img-team-2.jpg" class="img-responsive" alt="Image">
+                        <img src="img/speakers/speaker-1.jpg" class="img-responsive" alt="Image">
                         <figcaption class="caption text-center">
-                            <h3 data-name="Zoe Kramer">Zoe Kramer
+                            <h3 data-name="dr Jan K. Argasiński">dr Jan K. Argasiński
                                 <small>Jagiellonian University</small>
                             </h3>
                         </figcaption>
@@ -203,7 +215,7 @@
     <!-- .team -->
 
 
-    <section id="section-partner" class="section-wrapper partners">
+    <section id="section-partner" class="section-wrapper-main partners gray-bg">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -243,7 +255,7 @@
     <!-- .client-logo -->
 
 
-    <section id="section-venue" class="section-wrapper gray-bg">
+    <section id="section-venue" class="section-wrapper-main">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -265,21 +277,33 @@
                         <div class="contact-social-border">
                         <span class="neon">JAGIELLONIAN UNIVERSITY<br></span>
                         Institite of Psychology <br>
-                        Ingardena 6 <br>
-                        Cracow, Poland<br> 
+                        Ingardena 6, Cracow, Poland<br> 
                         <strong>cogsciconference@gmail.com</strong><br>
                         </div>
                     </div>
 
-                    <div class="contact-social contact-social-hover text-center">
-                        <a href="https://www.facebook.com/cracowcognitivescienceconference/"><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i>
-                        <span> FACEBOOK</span>
+                    <div class="contact-social-icons-container">
+                        <div class="contact-social contact-social-icons contact-social-hover text-center">
+                            <a href="https://www.facebook.com/cracowcognitivescienceconference/" target="_blank"><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i>
+                            <span> FACEBOOK</span>
+                            </a>
+                        </div>
+                        <div class="contact-social contact-social-icons contact-social-hover text-center">
+                            <a href="https://www.instagram.com/cogsciconf/" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+                            <span> INSTAGRAM</span>
+                             </a>
+                        </div>
                     </div>
-                    <div class="contact-social contact-social-hover text-center">
-                        <a href="https://www.instagram.com/cogsciconf/"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
-                        <span> INSTAGRAM</span>
+
+
+                <form id="contactForm" class="contact-subscribe-form" action="emailsub.php" method="POST" target="_blank">
+                    <div class="form-group">
+                        <label for="emailTwo" class="sr-only">E-mail</label>
+                        <input type="text" class="form-control input-lg" required="" id="emailTwo" name="email" placeholder="Enter your email address">
                     </div>
-                    
+                    <button type="submit" name="submit" class="contact-social contact-social-hover contact-subscribe-btn" value="Save Data">SUBSCRIBE TO OUR NEWSLETTER</button>
+                </form>    
+     
                 </div>
             </div>
             <!-- .row-->
@@ -288,12 +312,11 @@
     </section>
     <!-- contact-section -->
 
-
     <footer class="footer">
         <div class="copyright-section">
             <div class="container">
                 <div class="col-md-12">
-                    <div class="copytext text-center">&copy; Conference. All rights reserved | Design By: <a href="https://uicookies.com">uiCookies</a></div>
+                    <div class="copytext text-center">&copy; CCSC 2018 | Theme By: <a href="https://uicookies.com">uiCookies</a></div>
                 </div>
             </div>
             <!-- .container -->
