@@ -202,7 +202,20 @@
 <script src="js/jquery.fancybox.min.js"></script>
 
 <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+      function initMap() {
+        var uj = {lat: 50.061456, lng: 19.919858};
+        var map = new google.maps.Map(document.getElementById('googleMap'), {
+          zoom: 4,
+          center: uj
+        });
+        var marker = new google.maps.Marker({
+          position: uj,
+          map: map
+        });
+      }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPqqk_U3BXkq_Gkn2rn4UxWcbnrpm61KA&callback=initMap"></script>
 
 <!--<script src="js/one-page-nav.js"></script>-->
 <script src="js/scripts.js"></script>
