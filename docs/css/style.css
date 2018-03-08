@@ -711,6 +711,11 @@ button:focus,
     }
 }
 
+@media (max-width: 400px) {
+    .contact-social {
+        font-size: 15px;
+    }
+}
 
 .contact-social {
     background-color: transparent;
@@ -1057,7 +1062,9 @@ button:focus,
     }
 }
 
-
+/* ---------------------------------------------- /*
+ * HISTORY
+/* ---------------------------------------------- */
 .history-content {
     padding: 2rem 3.5rem;
     margin-bottom: 50px;
@@ -1078,11 +1085,54 @@ button:focus,
     float: right;
 }
 
+/* ---------------------------------------------- /*
+ * GUESTS
+/* ---------------------------------------------- */
+
 .guests-content {
     margin-top: 100px;
 }
 
+/* ---------------------------------------------- /*
+ * WORKSHOPS
+/* ---------------------------------------------- */
+.btn-workshop {
+    background-color: black;
+    margin: 0 auto;
+    display: block;
+    width: 250px;
+    font-size: 40px;
+    font-weight: 100;
+    margin-bottom: 40px;
+    border: .5px solid black;
+    -webkit-transition : all .2s ease-in-out;
+    -moz-transition    : all .2s ease-in-out;
+    transition         : all .2s ease-in-out;
+}
 
+.btn-workshop:hover {
+    transform: scale(0.9);
+    background-color: #fff;
+}
+
+.btn-workshop-more {
+    margin: 0 auto;
+    display: block;
+}
+
+.workshop-subtitle {
+    padding: 100px;
+    color: #fff;
+    font-weight: 100;
+    font-size: 50px;
+}
+
+@media(max-width:500px) {
+    .workshop-subtitle{
+        padding: 20px;
+        font-size: 30px;
+    }
+}
 
 /*Modal settings*/
 .full-modal { 
@@ -1135,7 +1185,9 @@ button:focus,
     }
     
     .modal-custom-content:nth-child(2){
-        overflow: scroll;
+        overflow-y: scroll;
+        font-size: 15px;
+        max-height: 100vh;
     }
 }
 
@@ -1171,8 +1223,31 @@ button:focus,
     font-weight: 100;
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
-    font-size: 16px;
-    text-align: center;
+    font-size: 17px;
+    text-align: left;
+    max-height: 220px;
+    overflow-y: auto;
+}
+/*CUSTOM SCROLLBAR*/
+.modal-custom-content::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.modal-custom-content::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+ 
+/* Handle */
+.modal-custom-content::-webkit-scrollbar-thumb {
+    background: #d4d1d3; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.modal-custom-content::-webkit-scrollbar-thumb:hover {
+    background: #666666; 
 }
 
 button.close {
@@ -1197,3 +1272,8 @@ button.close {
     justify-content: center;
     align-items: center;
 }
+
+.tba {
+    display: none;
+}
+

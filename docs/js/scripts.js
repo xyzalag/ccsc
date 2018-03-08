@@ -361,6 +361,19 @@ jQuery(function ($) {
       });
     }
     }());
+
+    // --------------------------------------------------------------------
+    // READ MORE COLLAPSE 
+    // --------------------------------------------------------------------  
+
+     (function() {
+        $("#read-more").on("hide.bs.collapse", function(){
+          $(".btn-workshop-more").html('READ MORE...');
+        });
+        $("#read-more").on("show.bs.collapse", function(){
+          $(".btn-workshop-more").html('READ LESS...');
+        });
+    }());
     
     // --------------------------------------------------------------------
     // CREATE MODAL ON THUMBNAIL CLICK
