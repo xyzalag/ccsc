@@ -616,11 +616,11 @@ button:focus,
     }
 
 .team .thumbnail .caption {
-    padding          : 10px;
+    padding          : 10px 0;
     }
 
 .team .thumbnail h3 {
-    font-size        : 16px;
+    font-size        : 15px;
     font-weight: bold;
     margin           : 0 2px;
     text-transform   : uppercase;
